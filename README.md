@@ -15,4 +15,4 @@
 -> According to the user's capital operation, recommend the activity information of banks or manufacturers. And inform the benefits.
 
 ## Project Environment ##
-- AndroidStudio
+- AndroidStudio with minSdkVersion 22 and targetSdkVersion 24
