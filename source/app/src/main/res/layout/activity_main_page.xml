@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@drawable/background_color"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:translationZ="1px"
+        android:id="@+id/id_mask"
+        android:onClick="OnClickForDis"></ImageView>
+
+    <ImageView
+        android:visibility="visible"
+        android:layout_width="114px"
+        android:layout_height="114px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="55px"
+        android:translationZ="100px"
+        android:id="@+id/id_angel"
+        android:background="@drawable/background_color_angel_animate"
+        android:src="@mipmap/ic_angel" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:visibility="visible"
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:translationZ="50px"
+        fab:fab_addButtonColorNormal="@color/orange"
+        fab:fab_addButtonColorPressed="@color/orange"
+        fab:fab_addButtonPlusIconColor="@color/orange"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_title="小天使推薦理財方案，加速完成夢想!"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_icon="@drawable/ic_newspaper"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_title="小天使的聰明購物，為你節省開銷!"
+            fab:fab_icon="@drawable/ic_shopping_bag"
+            fab:fab_colorPressed="@color/white_pressed"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_title="小天使溫馨提醒，你的本月消費最大金額!"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_icon="@drawable/ic_pie_chart" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <LinearLayout
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_color">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/background_grid"
+            android:layout_marginRight="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="15px"
+            android:layout_marginBottom="15px"
+            android:onClick="OnClickForMyWish">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart_dream"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:layout_marginTop="-15px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="夢想清單"
+                    android:gravity="center_horizontal"
+                    android:textColor="?android:attr/textColorTertiary" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="15px"
+                android:layout_marginBottom="15px"
+                android:onClick="OnClickForAsset"
+                android:background="@drawable/background_grid">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="128px"
+                        android:layout_height="128px"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ic_pie_chart" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginTop="-25px">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="理財記帳"
+                        android:gravity="center_horizontal" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="OnClickForSmartShopping"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="15px"
+                android:layout_marginBottom="15px"
+                android:background="@drawable/background_grid">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="128px"
+                        android:layout_height="128px"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ic_shopping_bag" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginTop="-25px">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="聰明購物"
+                        android:gravity="center_horizontal" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="15px"
+                android:layout_marginBottom="15px"
+                android:background="@drawable/background_grid"
+                android:onClick="OnClickForProfile">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="128px"
+                        android:layout_height="128px"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ic_address_book" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginTop="-25px">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="個人資訊"
+                        android:gravity="center_horizontal"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/textView2" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="OnClickAngelAnimateStart"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="15px"
+                android:layout_marginBottom="15px"
+                android:background="@drawable/background_grid">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="128px"
+                        android:layout_height="128px"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ic_newspaper" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginTop="-25px">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="最新資訊"
+                        android:gravity="center_horizontal" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
