@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_personal_wish_list_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context="creditangelteam.myapplication.PersonalWishListSetting">
+
+    <LinearLayout
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center"
+        android:weightSum="3"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="現在開始與小天使一起建立夢想清單吧!"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.45"
+            android:gravity="center_vertical|center"
+            android:weightSum="1"
+            android:layout_marginTop="16px"
+            android:background="@drawable/background_grid">
+
+            <TextView
+                android:text="沒有想法嗎?來去看看其他人的夢想吧!"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14" />
+
+            <ImageButton
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:id="@+id/DefaultImageButton"
+                android:background="@drawable/ic_cloud_computing" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.36"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginTop="16px"
+            android:background="@drawable/background_grid">
+
+            <TextView
+                android:text="已經有想要實現的夢想嗎?"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15" />
+
+            <ImageButton
+                android:layout_height="match_parent"
+                android:id="@+id/PersonalimageButton"
+                android:background="@drawable/educationa"
+                android:layout_width="220dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

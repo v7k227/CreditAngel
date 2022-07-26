@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="creditangelteam.creditangel">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomePage"
+            android:label="@string/title_activity_welcome_page" />
+        <activity android:name=".MainPage" />
+        <activity android:name=".ProfilePage" />
+        <activity android:name=".AssetPage" />
+        <activity android:name=".AssetPageTabs" />
+        <activity android:name=".SuggestEat" />
+        <activity android:name=".AssetPageDetail" />
+        <activity android:name=".SmartShoppingPage" />
+        <activity android:name=".CreditCardPage" />
+        <activity
+            android:name=".WishListPage"
+            android:label="@string/title_activity_wish_list_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FriendList"
+            android:label="@string/title_activity_friend_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PersonalWishListSetting" />
+        <activity
+            android:name=".EditPersonalWishListSetting"
+            android:label="@string/title_activity_edit_personal_wish_list_setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DefaultEditWishList"
+            android:label="@string/title_activity_default_edit_wish_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DefaultWishListDetail" />
+        <activity android:name=".FloatBtnPage" />
+        <activity
+            android:name=".InventmentDetail"
+            android:label="@string/title_activity_inventment_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".InventmentGraph" />
+        <activity android:name=".ShoppingSuggestPage" />
+        <activity android:name=".AccountingPage"></activity>
+        <activity android:name=".AccountAngelPage"></activity>
+        <activity android:name=".InvestmentAngel"></activity>
+        <activity android:name=".InvestmentListPage"></activity>
+
+    </application>
+
+</manifest>

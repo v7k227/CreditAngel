@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:rowCount="10"
+    android:columnCount="3" >
+    <ImageView
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_gravity="fill"
+        android:layout_columnSpan="3"
+        android:src="@drawable/top"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="152dp" />
+    <TextView
+        android:text="人氣排行榜:"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_height="33dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:layout_column="0"
+        android:layout_row="2"
+        android:layout_rowSpan="2"
+        android:src="@drawable/iphone"
+        android:id="@+id/imageView2" />
+    <TextView
+        android:text="TextView"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:layout_height="wrap_content"
+        android:id="@+id/section_label" />
+
+    <TextView
+        android:layout_column="2"
+        android:layout_row="2"
+        android:text="IPHONE 6S+ 128GB 玫瑰紅 -
+嶄新互動方式 蘋果發表新一代 iPhone，配備 5.5 吋 LED 背光螢幕、具備 3D Touch 技術的 Retina HD 顯示器。"
+        android:layout_gravity="fill"
+        android:layout_height="70dp"
+        android:layout_width="172dp" />
+    <TextView
+        android:layout_column="2"
+        android:layout_row="3"
+        android:text="中信紅利點數:478,600點"
+        android:textColor="@android:color/holo_red_light" />
+
+    <TextView
+        android:layout_column="2"
+        android:id="@+id/textview3"
+        android:layout_width="197dp"
+        android:layout_row="4"
+        android:text=""
+        android:layout_height="10dp" />
+
+    <ImageView
+        android:layout_column="0"
+        android:layout_row="5"
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill"
+        android:layout_height="108dp"
+        android:src="@drawable/shirt"
+        android:id="@+id/imageView3"
+        android:layout_width="106dp" />
+
+    <TextView
+        android:text=""
+        android:layout_column="1"
+        android:layout_row="5"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" />
+
+    <TextView
+        android:layout_column="2"
+        android:layout_row="5"
+        android:text="女款雪紡襯衫長袖襯衫女上衣 -
+女雪紡衫時尚流行女裝潮流服飾2色64x4【日本進口】【米蘭精品】"
+        android:id="@+id/textView3"
+        android:layout_gravity="fill"
+        android:layout_height="53dp"
+        android:layout_width="172dp" />
+
+    <TextView
+        android:layout_column="2"
+        android:layout_row="6"
+        android:text="中信紅利點數:21,500點"
+        android:textColor="@android:color/holo_red_light" />
+
+    <TextView
+        android:layout_column="2"
+        android:layout_width="197dp"
+        android:layout_row="7"
+        android:text=""
+        android:layout_height="10dp" />
+    <ImageView
+        android:layout_column="0"
+        android:layout_row="8"
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill"
+        android:layout_height="108dp"
+        android:src="@drawable/cup"
+        android:layout_width="106dp" />
+
+    <TextView
+        android:text=""
+        android:layout_column="1"
+        android:layout_row="8"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" />
+
+    <TextView
+        android:layout_column="2"
+        android:layout_row="8"
+        android:text="貴夫人 Mini生機精華萃取機 -
+貴夫人首次與日本三麗鷗合作, 獨家專利萃取技術與超大馬力350W"
+        android:id="@+id/textView3"
+        android:layout_gravity="fill"
+        android:layout_height="72dp"
+        android:layout_width="172dp" />
+
+    <TextView
+        android:layout_column="2"
+        android:layout_row="9"
+        android:text="中信紅利點數:48,300點"
+        android:textColor="@android:color/holo_red_light" />
+
+
+
+</GridLayout>

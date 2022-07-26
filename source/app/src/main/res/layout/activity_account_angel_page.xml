@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_account_angel_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="creditangelteam.myapplication.AccountAngelPage">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" 你已經跨出一大步，完成夢想清單的設定，加油喔!"
+            android:id="@+id/AngelTxtView2"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/black"
+            android:layout_weight="0.39"
+            android:gravity="left|center"
+            android:layout_gravity="center_vertical" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="156dp"
+            android:id="@+id/AngelImgVIew2"
+            android:background="@mipmap/ic_angel"
+            android:layout_weight="0.68" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:gravity="bottom">
+
+            <Button
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/NoButton2"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:id="@+id/OkButton2"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

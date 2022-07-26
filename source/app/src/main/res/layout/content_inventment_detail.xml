@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="creditangelteam.myapplication.InventmentDetail"
+    tools:showIn="@layout/activity_inventment_detail">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            android:layout_weight="0.2"
+            android:background="@drawable/background_grid"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="定期儲蓄存款"
+                android:id="@+id/dreamNameTextView"
+                android:gravity="center"
+                android:layout_weight="0.80" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_weight="0.1"
+            android:layout_marginTop="16px"
+            android:background="@drawable/background_grid">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="產品特色:"
+                android:id="@+id/DificultLevelTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:text="1.提供固定、機動與12~36個月天期的利率選擇
+2.可配合您資金調度需要，只要存款期間超過12個月以上，均可讓您自己指定存款到期日。
+3.到期自動續期，亦可申請中途解約或辦理定存質押借款
+4.透過電話語音、網路銀行、ATM即可將您的活儲轉存定存"
+                android:id="@+id/DificultLevelTextView2"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_marginTop="16px"
+            android:background="@drawable/background_grid"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="如何申請:"
+                android:id="@+id/TimeTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:text="1.本人/負責人除下列證明文件正本外，還需攜帶印鑑和第二身分證明文件正本(非營利法人請提供章呈清冊)親洽分行辦理。
+2.本國自然人：國民身分證(未成年人需另攜戶口名簿或戶籍謄本或身分證，並由法定代理人持身分證陪同辦理 )
+3.外國自然人：有合法入出境戳記且有效的護照、統一證號基本資料表及居留證
+4.非營利法人：法院核發的法人登記證書、國稅局核發的統一編號編配通知書、負責人身分證明文件"
+                android:id="@+id/TimeTextView2"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_marginTop="16px"
+            android:background="@drawable/background_grid"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="計息方式:"
+                android:id="@+id/MoneyTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:text="1.整存整付：採複利按日計息
+2.存本取息：採單利按日計息
+3.最新利率請參閱臺外幣存款利率
+4.中途解約利息計算方式請詳閱本行「個人開戶總約定書」"
+                android:id="@+id/MoneyTextView2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            android:background="@drawable/background_grid"
+            android:layout_weight="0.1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="注意事項:"
+                android:id="@+id/MoneyTextView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:text="質押借款:得借出定存金額的九成，並以該借出的定存利率加計1.5%計算利息予本行(本行保留核准權)"
+                android:id="@+id/MoneyTextView4" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="確定"
+            android:id="@+id/currentButton" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
