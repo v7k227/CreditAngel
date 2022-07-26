@@ -16,3 +16,5 @@
 
 ## Project Environment ##
 - AndroidStudio with minSdkVersion 22 and targetSdkVersion 24
+
+Note. It is an team work project.
